@@ -1,0 +1,176 @@
+#ScrollArrowContainer
+{   
+    transition: all 0.25s;
+    display: block;
+    position: absolute;
+    bottom: 3rem;
+    left: calc(50% - 3rem / 2);
+    width: 3rem;
+    height: 6rem;
+    z-index: 10;
+}
+
+/* Label of the arrow */
+#ScrollArrowLabel
+{
+    display: block;
+    position: absolute;
+    left: -3.5rem;
+    bottom: 7rem;
+    width: 10rem;
+    height: 2rem;
+    z-index: 10;
+    overflow: hidden;
+}
+
+#ScrollArrowLabel::after
+{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+#ScrollArrowLabel p
+{
+    animation: scrollArrowLabelTextChange 8s ease infinite -6s;
+    display: block;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    color: #fff;
+    line-height: 2rem;
+    margin: 0;
+}
+
+@keyframes scrollArrowLabelTextChange 
+{
+    0%
+    {
+        transform: translateY(-8rem);
+    }
+    5%,
+    25%
+    {
+        transform: translateY(-6rem);
+    }
+    30%,
+    50%
+    {
+        transform: translateY(-4rem);
+    }
+    55%,
+    75%
+    {
+        transform: translateY(-2rem);
+    }
+    80%,
+    100%
+    {
+        transform: translateY(0);
+    }
+}
+
+/* Arrows animation */
+#ScrollArrow
+{
+    --arrow-separation: 1.5rem;
+
+    transition: all 0.25s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#ScrollArrow span
+{
+    display: block;
+    position: absolute;
+    top: 0;
+ 
+    width: 1.2rem;
+    height: 1.2rem;
+    transform: rotate(45deg);
+    border-right: 3.5px solid #fff;
+    border-bottom: 3.5px solid #fff;
+}
+
+#ScrollArrow span:nth-child(1)
+{
+    animation: scrollDown 2s infinite 0s linear;
+}
+
+#ScrollArrow span:nth-child(2)
+{
+    top: var(--arrow-separation);
+    border-color: #ccc;
+}
+
+#ScrollArrow span:nth-child(3)
+{
+    top: calc(var(--arrow-separation) * 2);
+    border-color: #999;
+}
+
+@keyframes scrollDown 
+{
+    /* First displacement */
+    0%
+    {
+        top: 0;
+    }
+    10%
+    {
+        top: var(--arrow-separation);
+        border-color: #ccc;
+    }
+
+    /* Second displacement */
+    13%
+    {
+        top: var(--arrow-separation);
+    }
+    23%
+    {
+        top: calc(var(--arrow-separation) * 2);
+        border-color: #999;
+    }
+
+    /* Third displacement */
+    26%
+    {
+        top: calc(var(--arrow-separation) * 2);
+        opacity: 1;
+    }
+    35%
+    {
+        opacity: 1;
+    }
+    45%
+    {
+        top: calc(var(--arrow-separation) * 3);
+        opacity: 0;
+        border-color: #555;
+    }
+
+    /* Arrow spawns again on the top */
+    46%
+    {
+        top: -0.5rem;
+        opacity: 0;
+        border-color: #fff;
+    }
+    65%
+    {
+        top: 0;
+        opacity: 1;
+    }
+}
