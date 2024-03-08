@@ -75,3 +75,12 @@
 {
 	letter-spacing: normal;
 }
+
+@media (width < 900px) 
+{
+	.button-positionaware
+	{
+		font-size: 1.3rem;
+		line-height: 1.3rem;
+	};
+}

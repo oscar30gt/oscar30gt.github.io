@@ -69,3 +69,34 @@ h3
 	color: #868686;
 	text-transform: uppercase;
 }
+
+#BetaInfo
+{
+	position: fixed;
+	bottom: 10px;
+	left: calc(50% - 50px);
+	width: 100px;
+	text-align: center;
+	color: #cca219;
+	background-color: #ffff0054;
+	border-radius: 5px;
+	z-index: 999;
+}
+
+@media (width < 1646px)
+{
+	h1 
+	{ 
+		font-size: 4rem;
+		line-height: 5rem;
+	};
+}
+
+@media (width < 900px)
+{
+	h1 
+	{ 
+		font-size: 7.5rem;
+		line-height: 8.5rem;
+	};
+}
