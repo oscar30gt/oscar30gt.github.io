@@ -91,12 +91,3 @@ h3
 		line-height: 5rem;
 	};
 }
-
-@media (width < 900px)
-{
-	h1 
-	{ 
-		font-size: 7.5rem;
-		line-height: 8.5rem;
-	};
-}
