@@ -1,46 +1,106 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.1.0/uicons-thin-rounded/css/uicons-thin-rounded.css'>
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="defaults.css">
-    <script src="JS/header.js"></script>
-    <title>Document</title>
+    <link rel="stylesheet" href="Styles/Main.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css'>
+    <script src="Buttons.js"></script>
+    <script src="LocalLinks.js"></script>
+    <script src="ScrollEvents.js"></script>
+    <script src="ProjectFilters.js"></script>
+    <script src="ProjectsListView.js"></script>
+    <title>ÓscarG</title>
 </head>
 <body>
-    <header class="scroll_top">
-        <div id="Header_bar">
-            <img id="Header_logo" src="Images/logo.png">
-            <div id="Header_dropdown_icon" onclick="toggleHeader()">
-                <div></div>
-                <div></div>
-                <div></div>
+    <p id="BetaInfo">Beta web</p>
+    <section id="Cover">
+        <article class="content">
+            <h1>Creating fun, line by line</h1>
+            <div id="CoverButton">
+                <a href="#Projects" class="button-positionaware"><span></span>Projects</a>
             </div>
-        </div>
-        <nav>
-            <a href="">Games</a>
-            <a href="">Newsroom</a>
-            <a href="">About</a>
-            <a href="">Contact</a>
-        </nav>
-        <div id="Header_language_picker">
-            <a href="es.html">
-                <p>ENG</p>
-                <p>ESP</p>
+        </article>
+        <article id="ScrollArrowContainer">
+            <div id="ScrollArrowLabel">
+                <p>
+                    <!-- Inverse order -->
+                    Who am I?<br>
+                    Contact<br>
+                    Technologies<br>
+                    Projects<br>
+                    Who am I?
+                </p>
+            </div>
+            <a id="ScrollArrow" href="#AboutMe">
+                <span></span>
+                <span></span>
+                <span></span>
             </a>
-        </div>
-    </header>
-
-    <section id="Hero">
-        <div id="Hero_details">
-            <h1>Still Here</h1>
-            <p>An inhospitable planet. You. Struggling for survival. Alone? Well, you think so.</p>
-            <a class="button" href="">Follow the development</a>
-        </div>
+        </article>
     </section>
-
-    <section style="height: 150vh;"></section>
+    <section id="AboutMe">
+        <article class="content">
+            <aside class="leftAside">
+                <div id="ImageMeGreeting">
+                    <img src="Styles/Images/Memoji_greetings_low.png" alt="Oops, where's my photo?">
+                    <span></span>
+                </div>
+            </aside>
+            <aside class="rightAside">
+                <h2>About me</h2>
+                <p>I am Óscar, and from a young age, the realm of programming has held me captive. Every project presents a chance to create something <strong>distinctive and unique</strong>. I believe that small details are which make the difference, where even the tiniest pixel can cause a huge impact.</p>
+                <div id="LetsTalkButton">
+                    <a href="mailto:oscar30gt@gmail.com" class="button-positionaware"><span></span>Let's Talk</a>
+                </div>
+            </aside>
+        </article>
+    </section>
+    <section id="Projects">
+        <article class="content">
+            <h2>Projects</h2>
+                <div id="Filters">
+                    <ul>
+                        <!-- <li class="filterTag unselected">Games</li> -->
+                        <li class="filterTag unselected">Assets</li>
+                    </ul>
+                </div>
+                <p id="ProjectCount">Showing 1 project</p>
+                <div id="ProjectsList">
+                    <div id="ScrollBox">
+                        <ul>      
+                            <li class="projectCard">
+                                <a href=" https://assetstore.unity.com/packages/slug/270973 ">
+                                    <img src="Styles/Images/SyncedCover.png">
+                                    <div class="projectInfo">
+                                        <h4>Synced</h4>
+                                        <p>Tool asset, Unity</p>
+                                        <p>2023</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="Shadows">
+                        <div id="LeftShadow"></div>
+                        <div id="RightShadow"></div>
+                    </div>
+                </div>
+        </article>
+    </section>
+    <section id="Contact">
+        <article class="content">
+            <div>
+                <h3>Social</h3>
+                <p><a href="https://github.com/oscar30gt">GitHub</a></p>
+                <p><a href="https://twitter.com/Oscar_gt_">Twitter</a></p>
+                <p><a href="https://assetstore.unity.com/publishers/75478">Unity Asset Store</a></p>
+            </div>
+            <div>
+                <h3>Contact me</h3>
+                <p><a href="mailto:oscar30gt@gmail.com">Gmail</a></p>
+            </div>
+        </article>
+    </section>
 </body>
 </html>
