@@ -1,0 +1,12 @@
+#Hero
+{
+    background-image: url(../Images/hero_esp.png);
+}
+
+@media (width < 700px) 
+{
+    #Hero
+    {
+        background-image: url(../Images/hero_esp_alt.png);
+    }
+}
