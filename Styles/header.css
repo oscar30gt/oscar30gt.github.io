@@ -160,26 +160,27 @@ header.scroll_top
 
         nav
         {
-            margin: 20px 25px 0 25px;
+            margin: 30px 25px 0 0;
             flex-direction: column;
             width: calc(100% - 50px);
-            gap: 20px;
+            gap: 25px;
 
             a
             {
-                font-size: 24px;
+                font-size: 29px;
             }
 
             a:after
             {
-                margin: 4px 0 0 0;
+                margin: 6px 0 0 0;
             }
         }
 
         #Header_language_picker
         {
-            margin: 10px 25px 0 5px;
-            font-size: 20px;
+            margin: 10px 25px 0 0;
+            padding-left: 0;
+            font-size: 25px;
         }
     }
 
@@ -188,6 +189,7 @@ header.scroll_top
         height: 100vh;
         background-color: var(--header-color);
         backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
 
         #Header_dropdown_icon
         {
