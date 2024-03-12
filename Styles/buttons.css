@@ -1,0 +1,44 @@
+.button 
+{
+    font-size: 17px;
+    text-decoration: none;
+    padding: 10px 25px;
+    font-weight: 500;
+    background: transparent;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+
+    border: 2px solid var(--accent-color);
+    z-index: 1;
+    color: var(--accent-color);
+
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.button:after 
+{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    background-color: var(--accent-color);
+    transition: width 0.3s ease;
+}
+
+.button:hover 
+{
+    color: #fff;
+    box-shadow: 0 0 10px var(--accent-color);
+}
+
+.button:hover:after 
+{
+    left: 0;
+    width: 100%;
+}

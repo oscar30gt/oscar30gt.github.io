@@ -1,7 +1,5 @@
 #Hero
 {
-    position: relative;
-
     width: 100%;
     height: 100vh;
     
@@ -11,6 +9,8 @@
 
     background-size: cover;
     background-position: 85%;
+
+    z-index: -1;
     
     #Hero_details
     {
@@ -26,7 +26,7 @@
 
     span
     {
-        background: linear-gradient(to right, #5e97ec, #6aa1f3, #4288f1);
+        background: linear-gradient(to right, #7696c9, #437ed8, #68a5ff);
         background-clip: text;
         -webkit-background-clip: text;
         color: transparent;
