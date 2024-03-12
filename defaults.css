@@ -21,24 +21,6 @@ h1
     font-weight: 900;
 }
 
-@media (width < 700px) 
-{
-    h1
-    {
-        font-size: 55px;
-        line-height: 60px;
-    }
-}
-
-@media (width < 300px) 
-{
-    h1
-    {
-        font-size: 40px;
-        line-height: 45px;
-    }
-}
-
 p
 {
     color: #fff;
