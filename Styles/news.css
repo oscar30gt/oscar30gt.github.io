@@ -1,7 +1,42 @@
 #News
 {
-    position: relative;
-    width: 100%;
-    background-color: #f00;
-    height: 2000px;
+    height: 1000px;
+
+    article
+    {
+        max-width: 90vw;
+        width: 400px;
+        height: 400px;
+        background-color: #101010;
+        border-radius: 10px;
+        overflow: hidden;
+
+        img
+        {
+            width: 100%;
+        }
+
+        .news_card_info
+        {
+            position: relative;
+            width: calc(100% - 40px);
+            height: 160px;
+            margin: auto;
+
+            :nth-child(1) 
+            {
+                color: #999;
+                text-transform: uppercase;
+                font-size: 16px;
+                margin: 15px 0 11px 0;
+            }
+
+            :nth-child(3)
+            {
+                font-size: 15px;
+                position: absolute;
+                bottom: 5px;
+            }
+        }
+    }
 }

@@ -15,7 +15,7 @@
         align-items: center;
         flex-direction: column;
         text-align: center;
-        gap: 10px;
+        gap: 5px;
 
         .scroll_indicator
         {
