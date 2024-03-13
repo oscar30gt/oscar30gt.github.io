@@ -9,15 +9,18 @@
 
     #Hero_details
     {
+        position: relative;
         display: flex;
         justify-content: start;
         align-items: center;
         flex-direction: column;
         text-align: center;
+        gap: 10px;
 
-        .button
+        .scroll_indicator
         {
-            margin-bottom: 15px;
+            position: absolute;
+            bottom: -130px;
         }
     }
 }
