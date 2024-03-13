@@ -9,9 +9,20 @@
     <link rel="stylesheet" href="Styles/esp_variants.css">
     <script src="JS/header.js"></script>
     <script src="JS/scroll.js"></script>
+    <script src="JS/hero.js"></script>
     <title>Document</title>
 </head>
 <body>
+    <div id="Background_effects">
+        <div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
     <header class="scroll_top">
         <div id="Header_bar">
             <img id="Header_logo" src="Images/logo.png">
@@ -39,16 +50,138 @@
     <section id="Hero">
         <div id="Hero_details">
             <h1>Creando algo increíble</h1>
-            <p>¡No podemos esperar a enseñártelo! Estate atento para nuevas actualizaciones</p>
-            <a class="button" href="">Sigue el desarrollo</a>
+            <p>¡No podemos esperar para enseñártelo! Estate atento a nuevas actualizaciones</p>
+            <a class="button" href="">Seguir el desarollo</a>
             <div class="scroll_indicator"></div>
         </div>
     </section>
 
     <section id="News">
-        <article>
+        <h2>Noticias</h2>
+        <div class="horizontal_scroll">
+            <div>    
+                <div>   
 
-        </article>
+                    <article>
+                        <a href="">
+                            <div class="imageContainer">
+                                <img src="Images/news1.png">
+                            </div>
+                            <div class="news_card_info">
+                                <p>info</p>
+                                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dicta eius veritatis esse totam possimus</h3>
+                                <p>13/03/2024</p>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article>
+                        <a href="">
+                            <div class="imageContainer">
+                                <img src="Images/news2.png">
+                            </div>
+                            <div class="news_card_info">
+                                <p>lanzamiento</p>
+                                <h3>Lorem ipsum dolor sit amet</h3>
+                                <p>13/03/2024</p>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article>
+                        <a href="">
+                            <div class="imageContainer">
+                                <img src="Images/news2.png">
+                            </div>
+                            <div class="news_card_info">
+                                <p>Actualización</p>
+                                <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi repellendus dolorum.</h3>
+                                <p>13/03/2024</p>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article>
+                        <a href="">
+                            <div class="imageContainer">
+                                <img src="Images/news2.png">
+                            </div>
+                            <div class="news_card_info">
+                                <p>blog</p>
+                                <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
+                                <p>13/03/2024</p>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article>
+                        <a href="">
+                            <div class="imageContainer">
+                                <img src="Images/news2.png">
+                            </div>
+                            <div class="news_card_info">
+                                <p>fotos</p>
+                                <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi repellendus dolorum.</h3>
+                                <p>13/03/2024</p>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article>
+                        <a href="">
+                            <div class="imageContainer">
+                                <img src="Images/news2.png">
+                            </div>
+                            <div class="news_card_info">
+                                <p>anuncio</p>
+                                <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi repellendus dolorum.</h3>
+                                <p>13/03/2024</p>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article>
+                        <a href="">
+                            <div class="imageContainer">
+                                <img src="Images/news2.png">
+                            </div>
+                            <div class="news_card_info">
+                                <p>historias</p>
+                                <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi repellendus dolorum.</h3>
+                                <p>13/03/2024</p>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+            </div>
+        </div>
+        <div id="News_scroll_arrows">
+            <div onclick="scrollNewsBy(-1)"><img src="Images/svg/arrowLeft.svg"></div>
+            <div onclick="scrollNewsBy(1)"><img src="Images/svg/arrowRight.svg"></div>
+        </div>
     </section>
+
+    <section id="Newsletter">
+        <div>
+            <form action="" method="POST" accept-charset="utf-8">
+                <input type="email" id="Newsletter_mail_input" name="email" placeholder="email" title="Where do you want to revceive the emails?" required>
+                <span>
+                    <input type="submit" id="Newsletter_submit_input" value="" title="Subscribe">
+                    <img src="Images/svg/paperplane.svg">
+                </span>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <section>
+            <div>
+
+            </div>
+            <div id="Copyright">
+                
+            </div>
+        </section>
+    </footer>
 </body>
 </html>

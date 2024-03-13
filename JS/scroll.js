@@ -22,11 +22,10 @@ function scrollNewsBy(walk)
 {
     const effects = document.querySelector("#News .horizontal_scroll > div");
     const cardWidth = document.querySelector("#News article").offsetWidth;
-    console.log(cardWidth)
-    const gap = 20
+    const flexGap = 20
 
     effects.scrollBy({
-        left: walk * cardWidth + gap,
+        left: walk * cardWidth + flexGap,
         behavior: "smooth",
     });
 }
