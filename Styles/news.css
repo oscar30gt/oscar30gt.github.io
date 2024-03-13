@@ -12,9 +12,17 @@
         overflow: hidden;
         margin-bottom: 10px;
 
-        img
+        .imageContainer
         {
             width: 100%;
+            height: 200px;
+            overflow: hidden;
+
+            img
+            {
+                transition: all 0.3s;
+                width: 100%;
+            }
         }
 
         .news_card_info
@@ -39,5 +47,10 @@
                 bottom: 5px;
             }
         }
+    }
+
+    article:hover img
+    {
+        transform: scale(1.05);
     }
 }
