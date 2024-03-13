@@ -3,11 +3,13 @@
     --header-color: #000000e1;
     --accent-color: #6398e9;
     /* --accent-color: #fff; */
+    overflow-x: hidden;
 }
 
 body
 {
     margin: 0;
+    width: 100vw;
     overflow-x: hidden;
     background-color: #000;
     font-family: Lexend, Arial, Helvetica, sans-serif;
