@@ -17,3 +17,12 @@ function applyHeroEffect()
         effect.style.bottom = `${(currentScroll + 200) * multiplier - 100}px`;
     });
 }
+
+function scrollNewsBy(walk)
+{
+    const effects = document.querySelector("#News .horizontal_scroll > div");
+    effects.scrollBy({
+        left: walk,
+        behavior: "smooth",
+      });
+}

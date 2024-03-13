@@ -10,7 +10,7 @@
         background-color: #101010;
         border-radius: 10px;
         overflow: hidden;
-        margin-bottom: 10px;
+        margin-bottom: 20px;
 
         .imageContainer
         {
@@ -52,5 +52,29 @@
     article:hover img
     {
         transform: scale(1.05);
+    }
+}
+
+#News_scroll_arrows
+{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    div
+    {
+        height: 20px;
+        width: 20px;
+        padding: 10px;
+        border-radius: 50%;
+        background-color: var(--accent-color);
+        cursor: pointer;
+    }
+    
+    img
+    {
+        height: 100%;
+        width: 100%;
+        pointer-events: none;
     }
 }
