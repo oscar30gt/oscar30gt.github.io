@@ -21,8 +21,12 @@ function applyHeroEffect()
 function scrollNewsBy(walk)
 {
     const effects = document.querySelector("#News .horizontal_scroll > div");
+    const cardWidth = document.querySelector("#News article").offsetWidth;
+    console.log(cardWidth)
+    const gap = 20
+
     effects.scrollBy({
-        left: walk,
+        left: walk * cardWidth + gap,
         behavior: "smooth",
-      });
+    });
 }
