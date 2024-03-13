@@ -1,7 +1,8 @@
 :root
 {
     --header-color: #000000e1;
-    --accent-color: #6398e9;
+    /* --accent-color: #6398e9; */
+    --accent-color: #fff;
 }
 
 body
@@ -18,7 +19,7 @@ h1
     font-size: 75px;
     line-height: 85px;
     margin: 0;
-    font-weight: 00;
+    font-weight: 700;
 }
 
 p
