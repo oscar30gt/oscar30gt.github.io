@@ -1,8 +1,13 @@
 :root
 {
-    --header-color: #000000e1;
+    --header-color: #000000d5;
     --accent-color: #6398e9;
     /* --accent-color: #fff; */
+    overflow-x: hidden;
+}
+
+html
+{
     overflow-x: hidden;
 }
 
@@ -17,16 +22,11 @@ body
 
 h1
 {
-    color: #000000;
+    color: #fff;
     font-size: 90px;
     line-height: 100px;
     margin: 0;
     font-weight: 700;
-    text-shadow: 
-        -1px -1px 0 #fff,  
-        1px -1px 0 #fff,
-        -1px 1px 0 #fff,
-        1px 1px 0 #fff;
 }
 
 h2
