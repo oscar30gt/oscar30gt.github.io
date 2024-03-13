@@ -18,6 +18,11 @@ body
     overflow-x: hidden;
     background-color: #000;
     font-family: Lexend, Arial, Helvetica, sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
 }
 
 h1
@@ -54,9 +59,13 @@ p
     line-height: 20px;
 }
 
+a
+{
+    text-decoration: none;
+}
+
 section
 {
-    margin: 0 auto;
     width: 90%;
     max-width: 1700px;
 }
