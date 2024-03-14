@@ -131,7 +131,7 @@ section
         align-items: start;
         gap: 20px;
         width: fit-content;
-        padding: 0;
+        padding-right: 30%;
     }
 }
 

@@ -10,6 +10,8 @@ header
     backdrop-filter: blur(10px);
     margin: 0;
     width: calc(100vw - 60px);
+    /* max-width: 1780px; */
+
     padding: 0 30px;
     height: 80px;
 
