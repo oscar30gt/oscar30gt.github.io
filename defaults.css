@@ -105,7 +105,9 @@ section
 {
     position: relative;
     width: 100%;
-
+    padding-bottom: 20px;
+    background-color: #6398e9;
+    
     /* Div whose content can be scrollable */
     > div
     {
@@ -115,7 +117,6 @@ section
         position: relative;
         width: 100%;
         padding: 0 10%;
-        left: -10%;
 
         scrollbar-width: none;
         -ms-overflow-style: none;
