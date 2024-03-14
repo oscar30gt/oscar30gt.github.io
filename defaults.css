@@ -144,7 +144,6 @@ section
     height: 100%;
     width: 15%;
     z-index: 100;
-
 }
 
 .horizontal_scroll:before
@@ -162,12 +161,5 @@ section
 @media screen and (-webkit-min-device-pixel-ratio:0) {
     .horizontal_scroll > div > div {
         padding-right: 30%;
-    }
-}
-
-/* Safari only */
-@supports (-webkit-hyphens:none){  
-    .horizontal_scroll > div > div {
-        padding-right: 300px;
     }
 }
