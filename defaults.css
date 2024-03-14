@@ -104,10 +104,7 @@ section
 .horizontal_scroll
 {
     position: relative;
-    padding: 0 10%;
     width: 100%;
-    left: -10%;
-    background-color: #fff;
 
     /* Div whose content can be scrollable */
     > div
@@ -119,11 +116,10 @@ section
         width: 100%;
         padding: 0 10%;
         left: -10%;
-        
+
         scrollbar-width: none;
         -ms-overflow-style: none;
         ::-webkit-scrollbar { display: none; }
-        background-color: #f00;
     }
 
     /* Scrollable box */
@@ -134,7 +130,6 @@ section
         align-items: start;
         gap: 20px;
         width: fit-content;
-        background-color: #888;
     }
 }
 
@@ -152,12 +147,12 @@ section
 
 .horizontal_scroll:before
 {
-    left: 0;
-    /* background: linear-gradient(to right, #000, transparent); */
+    left: -10%;
+    background: linear-gradient(to right, #000, transparent);
 }
 
 .horizontal_scroll:after
 {
-    right: 0;
-    /* background: linear-gradient(to right, transparent, #000); */
+    right: -10%;
+    background: linear-gradient(to right, transparent, #000);
 }
