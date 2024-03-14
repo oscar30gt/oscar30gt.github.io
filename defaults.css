@@ -122,6 +122,7 @@ section
         scrollbar-width: none;
         -ms-overflow-style: none;
         ::-webkit-scrollbar { display: none; }
+        -webkit-overflow-scrolling: touch; /* Safari touch scroll */
     }
 
     /* Scrollable box */
@@ -131,9 +132,9 @@ section
         justify-content: start;
         align-items: start;
         gap: 20px;
+        width: -webkit-fit-content; /* Safari fit-content */
         width: fit-content;
         border: 1px dashed #00f;
-
     }
 }
 
