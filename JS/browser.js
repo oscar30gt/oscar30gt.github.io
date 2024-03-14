@@ -1,9 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
 
     // Checks the safari's scroll padding issue
-    var isSafari = /constructor/i.test(window.HTMLElement) 
-        || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] 
-        || (typeof safari !== 'undefined' && window['safari'].pushNotification));
+    var isSafari = navigator.userAgent.toLowerCase().indexOf('safari/') > -1;
         
     if (isSafari)
     {   
