@@ -157,9 +157,3 @@ section
     right: -15%;
     background: linear-gradient(to right, transparent, #000);
 }
-
-@media screen and (-webkit-min-device-pixel-ratio:0) {
-    .horizontal_scroll > div > div {
-        padding-right: 30%;
-    }
-}
