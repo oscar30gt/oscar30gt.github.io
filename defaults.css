@@ -111,7 +111,7 @@ section
     > div
     {
         overflow-y: hidden;
-        overflow-x: scroll;
+        overflow-x: auto;
 
         position: relative;
         width: 100%;
