@@ -4,4 +4,90 @@ footer
     width: 100%;
     display: flex;
     justify-content: center;
+
+    #Footer_links
+    {
+        width: 100%;
+        padding-top: 190px;
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+        flex-wrap: wrap;
+
+        h3 
+        {
+            display: block;
+            width: fit-content;
+            padding-bottom: 2px;
+            border-bottom: 3px solid var(--accent-color);
+            margin-bottom: 5px;
+        }
+        
+        > div 
+        {
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            gap: 10px;
+            width: 400px;
+        }
+
+        a 
+        {
+            width: fit-content;
+            color: #ccc;
+        }
+
+        a:after 
+        {
+            content: "";
+            transition: all 0.2s;
+            display: block;
+            width: 0;
+            height: 2px;
+            background-color: var(--accent-color);
+        }
+
+        a:hover:after
+        {
+            width: 100%;
+        }
+
+        #Social_links
+        {
+            display: flex;
+            flex-direction: row;
+            gap: 15px;
+
+            div
+            {
+                width: 20px;
+                height: 20px;
+                margin-bottom: 3px;
+
+                img 
+                {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+
+    #Copyright
+    {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 3px 0;
+        border-top: 1px solid var(--secondary-text-color);
+        margin-top: 15px;
+        
+        p
+        {
+            font-size: 14px;
+            line-height: 14px;
+            color: var(--secondary-text-color);
+        }
+    }
 }

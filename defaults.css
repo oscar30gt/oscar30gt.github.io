@@ -3,6 +3,7 @@
     --header-color: #000000d5;
     --accent-color: #6398e9;
     --accent-color-alt: #71a3ee;
+    --secondary-text-color: #888;
     /* --accent-color: #fff; */
     overflow-x: hidden;
 }
@@ -63,6 +64,7 @@ p
 a
 {
     text-decoration: none;
+    color: #fff;
 }
 
 section
@@ -88,6 +90,7 @@ section
     background-color: #fff;
 
     animation: scroll_indicator 3s ease infinite;
+    -webkit-animation: scroll_indicator 3s ease infinite;
 }
 
 @keyframes scroll_indicator 
