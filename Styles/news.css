@@ -1,7 +1,5 @@
 #News
 {
-    height: 1000px;
-
     article
     {
         max-width: 90vw;
@@ -76,6 +74,7 @@
     div:active
     {
         background-color: var(--accent-color-alt);
+        box-shadow: 0 0 10px var(--accent-color);
     }
     
     img

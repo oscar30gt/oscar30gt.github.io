@@ -157,3 +157,20 @@ section
     right: -15%;
     background: linear-gradient(to right, transparent, #000);
 }
+
+.generic_page_heading
+{
+    margin: 80px 0 40px 0;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h1 
+    {
+        position: relative;
+        display: block;
+        font-size: 60px;
+        line-height: 60px;
+    }
+}
