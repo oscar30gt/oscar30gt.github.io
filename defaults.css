@@ -116,12 +116,13 @@ section
         position: relative;
         width: 100%;
         padding: 0 15%;
+        background-color: #888;
         margin-left: -15%;
 
         scrollbar-width: none;
         -ms-overflow-style: none;
+        -webkit-overflow-scrolling: touch;
         ::-webkit-scrollbar { display: none; }
-        -webkit-overflow-scrolling: touch; /* Safari touch scroll */
     }
 
     /* Scrollable box */
@@ -131,7 +132,7 @@ section
         justify-content: start;
         align-items: start;
         gap: 20px;
-        width: -webkit-fit-content; /* Safari fit-content */
+        width: -webkit-fit-content;
         width: fit-content;
     }
 }
@@ -152,11 +153,11 @@ section
 .horizontal_scroll:before
 {
     left: -15%;
-    /* background: linear-gradient(to right, #000, transparent); */
+    background: linear-gradient(to right, #000, transparent);
 }
 
 .horizontal_scroll:after
 {
     right: -15%;
-    /* background: linear-gradient(to right, transparent, #000); */
+    background: linear-gradient(to right, transparent, #000);
 }

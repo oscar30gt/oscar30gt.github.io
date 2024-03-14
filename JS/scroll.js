@@ -18,14 +18,43 @@ function applyHeroEffect()
     });
 }
 
-function scrollNewsBy(walk)
+function scrollNewsBy(dir)
 {
     const effects = document.querySelector("#News .horizontal_scroll > div");
     const cardWidth = document.querySelector("#News article").offsetWidth;
-    const flexGap = 20
+    const flexGap = 20;
+    const total = cardWidth + flexGap;
 
-    effects.scrollBy({
-        left: walk * (cardWidth + flexGap),
+    const offset = dir == 1 ? 1 : -1;
+    const newStep = lastStep(effects.scrollLeft + total * dir + offset, total);
+    const targetScroll = clamp(newStep, 0, effects.offsetWidth);
+
+    effects.scrollTo({
+        left: targetScroll,
         behavior: "smooth",
     });
+
+    console.log(effects.scrollLeft)
+}
+
+function lastStep(currentPos, stepWidth)
+{
+    const currentStep = Math.floor((currentPos) / stepWidth);
+
+    return stepWidth * currentStep;
+}
+
+function clamp(value, min, max)
+{
+    if (value > max)
+    {
+        return max;
+    }
+
+    if (value < min)
+    {
+        return min;
+    }
+
+    return value;
 }
