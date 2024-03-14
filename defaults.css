@@ -115,8 +115,8 @@ section
 
         position: relative;
         width: 100%;
-        padding: 0 5%;
-        margin-left: -5%;
+        padding: 0 15%;
+        margin-left: -15%;
 
         scrollbar-width: none;
         -ms-overflow-style: none;
@@ -131,7 +131,6 @@ section
         align-items: start;
         gap: 20px;
         width: fit-content;
-        background-color: #333;
     }
 }
 
@@ -143,18 +142,18 @@ section
     top: 0;
     display: block;
     height: 100%;
-    width: 5%;
+    width: 15%;
     z-index: 100;
 }
 
 .horizontal_scroll:before
 {
-    left: -5%;
+    left: -15%;
     background: linear-gradient(to right, #000, transparent);
 }
 
 .horizontal_scroll:after
 {
-    right: -5%;
+    right: -15%;
     background: linear-gradient(to right, transparent, #000);
 }
