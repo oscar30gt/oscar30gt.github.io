@@ -115,8 +115,6 @@ section
 
         position: relative;
         width: 100%;
-        padding: 0 15%;
-        margin-left: -15%;
 
         scrollbar-width: none;
         -ms-overflow-style: none;
