@@ -131,7 +131,6 @@ section
         align-items: start;
         gap: 20px;
         width: fit-content;
-        padding-right: 30%;
     }
 }
 
@@ -158,4 +157,17 @@ section
 {
     right: -15%;
     background: linear-gradient(to right, transparent, #000);
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    .horizontal_scroll > div > div {
+        padding-right: 30%;
+    }
+}
+
+/* Safari only */
+@supports (-webkit-hyphens:none){  
+    .horizontal_scroll > div > div {
+        padding-right: 300px;
+    }
 }
