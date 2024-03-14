@@ -7,14 +7,16 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: var(--accent-color);
+    background-color: #202020;
+    box-shadow: 0 0 15px #000;
 
     p
     {
         text-align: center;
-        margin: 0 0 20px 0;
+        margin: 10px 0 30px 0;
+        max-width: 80%;
     }
-
+    
     h2
     {
         margin-top: 0;
@@ -100,8 +102,19 @@
     
     #Newsletter_submit_input:hover 
     {
-        background-color: var(--accent-color-alt);
+        + img
+        { 
+            animation: submit_button_hover 0.6s ease;
+        }
     }
+}
+
+@keyframes submit_button_hover
+{
+    0% { transform: rotate(0); }
+    20% { transform: rotate(-15deg); }
+    50% { transform: rotate(15deg); }
+    0% { transform: rotate(0); }
 }
 
 @media (width < 600px) 
