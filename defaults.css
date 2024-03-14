@@ -117,6 +117,7 @@ section
         width: 100%;
         padding: 0 15%;
         margin-left: -15%;
+        border: 1px dashed #fff;
 
         scrollbar-width: none;
         -ms-overflow-style: none;
@@ -131,6 +132,8 @@ section
         align-items: start;
         gap: 20px;
         width: fit-content;
+        border: 1px dashed #00f;
+
     }
 }
 
@@ -144,16 +147,18 @@ section
     height: 100%;
     width: 15%;
     z-index: 100;
+    border: 1px dashed #f00;
+
 }
 
 .horizontal_scroll:before
 {
     left: -15%;
-    background: linear-gradient(to right, #000, transparent);
+    /* background: linear-gradient(to right, #000, transparent); */
 }
 
 .horizontal_scroll:after
 {
     right: -15%;
-    background: linear-gradient(to right, transparent, #000);
+    /* background: linear-gradient(to right, transparent, #000); */
 }
