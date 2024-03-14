@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-    console.log(navigator.vendor);
+    console.log(navigator.userAgent.toLowerCase());
     // Checks the safari's scroll padding issue
     var isSafari = navigator.userAgent.toLowerCase().indexOf('safari/') > -1;
         
