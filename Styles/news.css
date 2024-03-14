@@ -63,12 +63,19 @@
 
     div
     {
+        transition: all 0.1s;
         height: 20px;
         width: 20px;
         padding: 10px;
         border-radius: 50%;
         background-color: var(--accent-color);
         cursor: pointer;
+    }
+
+    div:hover,
+    div:active
+    {
+        background-color: var(--accent-color-alt);
     }
     
     img

@@ -25,7 +25,7 @@ function scrollNewsBy(walk)
     const flexGap = 20
 
     effects.scrollBy({
-        left: walk * cardWidth + flexGap,
+        left: walk * (cardWidth + flexGap),
         behavior: "smooth",
     });
 }

@@ -1,8 +1,8 @@
 #Newsletter
 {
     position: relative;
-    top: 125px;
-    height: 250px;
+    top: 150px;
+    height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -84,7 +84,8 @@
         border: none;
         border-radius: 10px;
         cursor: pointer;
-        background-color: #fff;
+        background-color: transparent;
+        border: 2px solid #fff;
     }
 
     img
@@ -99,8 +100,7 @@
     
     #Newsletter_submit_input:hover 
     {
-        background-color: #eee;
-        box-shadow: 0 0 10px var(--accent-color);
+        background-color: var(--accent-color-alt);
     }
 }
 
