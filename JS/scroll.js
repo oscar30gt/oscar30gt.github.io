@@ -33,8 +33,23 @@ function scrollNewsBy(dir)
         left: targetScroll,
         behavior: "smooth",
     });
+}
 
-    console.log(effects.scrollLeft)
+function scrollBlogsBy(dir)
+{
+    const effects = document.querySelector("#Blogs .horizontal_scroll > div");
+    const cardWidth = document.querySelector("#Blogs article").offsetWidth;
+    const flexGap = 20;
+    const total = cardWidth + flexGap;
+
+    const offset = dir == 1 ? 1 : -1;
+    const newStep = lastStep(effects.scrollLeft + total * dir + offset, total);
+    const targetScroll = clamp(newStep, 0, effects.offsetWidth);
+
+    effects.scrollTo({
+        left: targetScroll,
+        behavior: "smooth",
+    });
 }
 
 function lastStep(currentPos, stepWidth)

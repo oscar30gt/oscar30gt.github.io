@@ -106,7 +106,6 @@ section
 {
     position: relative;
     width: 100%;
-    padding-bottom: 20px;
     
     /* Div whose content can be scrollable */
     > div
@@ -145,6 +144,7 @@ section
     height: 100%;
     width: 15%;
     z-index: 100;
+    pointer-events: none;
 }
 
 .horizontal_scroll:before
