@@ -1,0 +1,34 @@
+.text_and_image_right,
+.text_and_image_left
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    margin: 10px 0;
+
+    img,
+    div
+    {
+        display: flex;
+        flex-direction: column;
+        width: calc(50% - 35px);
+        max-width: 700px;
+    }
+
+    .button
+    {
+        margin-top: 15px;
+    }
+}
+
+.text_and_image_left
+{
+    flex-direction: row-reverse;
+    text-align: right;
+
+    div 
+    {
+        align-items: end;
+    }
+}

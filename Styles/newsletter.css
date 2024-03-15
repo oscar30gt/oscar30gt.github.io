@@ -114,8 +114,8 @@
 @keyframes submit_button_hover
 {
     20% { transform: translateX(-10px) translateY(10px); }
-    70% { transform: translateX(100px) translateY(-100px); }
-    70.1% { transform: translateX(-50px) translateY(50px); }
+    65% { transform: translateX(40px) translateY(-40px); }
+    65.1% { transform: translateX(-30px) translateY(30px); }
     100% { transform: translateX(0) translateY(0); }
 }
 

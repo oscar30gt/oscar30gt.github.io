@@ -23,6 +23,23 @@
             bottom: -130px;
         }
     }
+
+    h1
+    {
+        margin: 0 30px;
+    }
+}
+
+@media (width < 1700px) 
+{
+    #Hero
+    {
+        h1
+        {
+            font-size: 70px;
+            line-height: 75px;       
+        }   
+    }
 }
 
 @media (width < 700px) 
