@@ -32,3 +32,27 @@
         align-items: end;
     }
 }
+
+@media (width < 750px)
+{
+    .text_and_image_right,
+    .text_and_image_left
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin-top: 70px;
+
+        img,
+        div
+        {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            align-items: start;
+            text-align: left;
+        }
+    }
+}
