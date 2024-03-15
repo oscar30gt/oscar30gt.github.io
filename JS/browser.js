@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (isSafari)
     {   
         var scrollBoxes = document.querySelectorAll(".horizontal_scroll > div > div")
-        scrollBoxes.forEach(scrollBox => {
+        scrollBoxes.array.forEach(scrollBox => {
             scrollBox.style.padding = "0 15% 0 0";
         })
     }
