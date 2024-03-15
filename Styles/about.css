@@ -1,0 +1,21 @@
+#About
+{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+    > div
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        width: 90%;
+        max-width: 700px;
+    }
+
+    p 
+    {
+        margin: 0 0 10px 0;
+    }
+}
